@@ -358,10 +358,43 @@ color: #5D58EF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px; /* Example container size */
-    margin: 20px auto; /* Center container */
+    width: 200px; 
+    margin: 20px auto; 
   }
 
+
+.story-side{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 540px;
+  height: 600px;
+  margin-left: 30px;
+  justify-content: space-between;
+  border-style: none;
+  border-radius: 10%;
+}
+
+.story-side2{
+  display: grid;
+  grid-template-columns: 4fr 60px;
+  padding-left:210px ;
+  gap:20px
+}
+
+
+.story-card1{
+  border-style: none;
+  border-radius: 10%;
+  border: 1px solid #ccc;
+}
+
+
+.story-content{
+  border-style: none;
+  border-radius: 10%;
+  border: 1px solid #ccc;
+}
   
 
  
