@@ -7,19 +7,20 @@
 }
 
 body{
-    /* font-family: 'Quicksand';
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    max-width: 1440px;
-    background: linear-gradient(to top,#fbf0d9 20%, white 80%),url('bg.png'); */
-
+   
     font-family: 'Quicksand';
-    background: linear-gradient(to top, #fbf0d9 20%, white 80%), url('bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0; 
+    margin: 0;
+    background: 
+     
+        linear-gradient(to top, #efd7a3 20%, white 80%), 
+
+        url('bg.png'); 
+    background-position: center, center;
+    
+
 }
 
 
@@ -840,42 +841,111 @@ view:hover {
 }
 
 
-
-
-
-.footer {
-  padding: 20px;
-  background-color: #01ACFD; /* Background color for footer */
-  margin-top: 70px;
-  width: 100%;
+.footer{
+  background-color: #01ACFD;
+  margin-top: 90px;
+  height: 300px;
+  color:white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three rows: one for the logo, one for the social media icons, and one for the content */
+  
+}
+.footer-content1{
+  width: 300px !important;
+  margin-left: 70px !important;
+  height: auto;
 }
 
 .education {
   display: grid;
-  grid-template-columns: auto 1fr; /* Two columns: one for the logo and one for the title */
-  align-items: center; /* Align items vertically */
-  gap: 10px; /* Small gap between columns */
+  grid-template-columns: auto auto; /* Two columns: one for the image, one for the title */
+  align-items: center; /* Center items vertically */
+  justify-content: start; /* Align items horizontally to the left */
+  gap: 0; /* Ensure there is no gap between grid items */
+
 }
 
 .education img {
-  width: 50px; /* Adjust size of the logo */
-  height: auto; /* Maintain aspect ratio */
+  width: 50px; /* Adjust image size */
+  height: auto;
 }
 
 .education-title {
-  font-size: 1.5rem; /* Adjust title size */
+  font-size: 24px;
   font-weight: bold;
-  color: #333; /* Adjust color */
-}
 
-.education-content {
-  margin-top: 10px; /* Adds spacing below the title and logo */
-}
-
-.education-text {
-  font-size: 1rem;
-  color: #555; /* Adjust text color */
-  line-height: 1.5; /* Improves readability */
+  color:white;
+  margin-top: 30px;
 }
 
 
+.school-list {
+margin-top: 30px !important;
+}
+.school li{
+  list-style: none !important;
+margin-top: 30px !important;
+}
+.footer-content3{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.contact-link{
+  display: flex;
+  width: 200px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.contact-link li img{
+  list-style-type: none;
+  
+
+
+}
+
+.contact-info{
+  
+  margin-top: 30px;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  .footer {
+    grid-template-columns: 1fr; /* Single-column grid */
+    padding: 20px; /* Padding around the footer */
+    height: 600px;
+  }
+
+  .footer-content1, 
+  .footer-content3, 
+  .education, 
+  .contact-info {
+    margin-left: 20px; /* Consistent left margin */
+    text-align: left; /* Align content to the left */
+  }
+
+  .education {
+    justify-content: start; /* Keep content aligned to the left */
+    margin-left: 20px; /* Ensure left margin matches other sections */
+  }
+
+  .education-title {
+    margin-top: 10px; /* Reduce spacing for smaller screens */
+  }
+.school-list{
+  margin-left: 0;
+}
+  .contact-link {
+    margin-left: 20px; /* Consistent left margin */
+    justify-content: start; /* Align icons to the left */
+  }
+
+  .school-list {
+    margin-left: 20px; /* Consistent left margin for school list */
+  }
+}
