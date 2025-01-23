@@ -13,14 +13,14 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-    background: 
-     
-        linear-gradient(to top, #efd7a3 20%, white 80%), 
-
-        url('bg.png'); 
-    background-position: center, center;
     
+     
+  
+background: linear-gradient(to top, #efd7a3 20%, white 80%);
 
+background-size:cover; /* Adjust to fit your needs */
+background-position:center center; /* Center the image */
+background-repeat:no-repeat; /* Prevent image repetition */
 }
 
 
@@ -162,6 +162,30 @@ color: #5D58EF;
 
 
 
+.view {
+  font-size: 1.2rem; /* Font size for the button text */
+  font-weight: 600; /* Boldness of the text */
+  margin-bottom: 50px; /* Margin below the button */
+  color: #FFFFFF; /* White text color */
+  background-color: black; /* Black background color */
+  border: none; /* Removes border */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border-radius: 16px; /* Smooth rounded corners */
+  padding: 10px 20px; /* Even padding for top/bottom and left/right */
+  position: absolute; /* Positioning for centering */
+  transform: translate(-50%, -50%); /* Adjusts position to truly center */
+  left: 50%; /* Centers horizontally */
+  top: 324%; /* Centers vertically */
+  text-align: center; /* Centers text inside the button */
+}
+
+.view:hover {
+  background-color: #f70a0a; /* Slightly lighter black on hover */
+  color: #0b0b0b; /* Gold text color on hover */
+  transform: translate(-50%, -50%) scale(1.1); /* Adds a slight zoom effect */
+}
+
+
 @media screen and (max-width: 576px) {
   /* Banner Container */
   .banner {
@@ -215,6 +239,30 @@ color: #5D58EF;
     height: auto; /* Maintains the aspect ratio */
     border-radius: 8px; /* Adds slight rounding for better aesthetics */
   }
+
+  
+.view {
+  font-size: 1.2rem; /* Font size for the button text */
+  font-weight: 600; /* Boldness of the text */
+  margin-bottom: 50px; /* Margin below the button */
+  color: #FFFFFF; /* White text color */
+  background-color: black; /* Black background color */
+  border: none; /* Removes border */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border-radius: 16px; /* Smooth rounded corners */
+  padding: 10px 20px; /* Even padding for top/bottom and left/right */
+  position: absolute; /* Positioning for centering */
+  transform: translate(-50%, -50%); /* Adjusts position to truly center */
+  left: 50%; /* Centers horizontally */
+  top: 846%; /* Centers vertically */
+  text-align: center; /* Centers text inside the button */
+}
+
+.view:hover {
+  background-color: #f70a0a; /* Slightly lighter black on hover */
+  color: #0b0b0b; /* Gold text color on hover */
+  transform: translate(-50%, -50%) scale(1.1); /* Adds a slight zoom effect */
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -366,7 +414,9 @@ border-left: none !important;
 
   }
 
-  
+  .card-read1:hover{
+    color: #01203f;
+  }
 
   .card-read2{
     font-size: .9375rem;
@@ -379,6 +429,9 @@ border-left: none !important;
 
   }
   
+  .card-read2:hover{
+    color: #f25900;
+  }
   .card-read3{
     font-size: .9375rem;
     color: #8700FF;
@@ -389,7 +442,9 @@ border-left: none !important;
 
 
   }
-  
+  .card-read3:hover{
+    color: #a70c75;
+  }
   
 
   .fas {
@@ -621,31 +676,52 @@ border-left: none !important;
   background-color: #95B226; /* Applied the new background color */
 }  
 
-.view {
-  font-size: 1.2rem; /* Font size for the button text */
-  font-weight: 600; /* Boldness of the text */
-  margin-bottom: 50px; /* Margin below the button */
-  color: #FFFFFF; /* White text color */
-  background-color: black; /* Black background color */
-  border: none; /* Removes border */
-  cursor: pointer; /* Changes cursor to pointer on hover */
-  border-radius: 16px; /* Smooth rounded corners */
-  padding: 10px 20px; /* Even padding for top/bottom and left/right */
-  position: absolute; /* Positioning for centering */
-  transform: translate(-50%, -50%); /* Adjusts position to truly center */
-  left: 50%; /* Centers horizontally */
-  top: 325%; /* Centers vertically */
-  text-align: center; /* Centers text inside the button */
-}
 
-view:hover {
-  background-color: #333; /* Slightly lighter black on hover */
-  transition: background-color 0.3s ease; /* Smooth transition effect */
-}
 
 @media screen and (max-width: 576px) {
  
- 
+  .card-read1{
+    font-size: .9375rem;
+    color: #64C8FF;
+    font-weight: bold;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+
+
+  }
+
+  .card-read1:hover{
+    color: #01203f;
+  }
+
+  .card-read2{
+    font-size: .9375rem;
+    color: #F0AA00; 
+    font-weight: bold;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+
+
+  }
+  
+  .card-read2:hover{
+    color: #f25900;
+  }
+  .card-read3{
+    font-size: .9375rem;
+    color: #8700FF;
+    font-weight: bold;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+
+
+  }
+  .card-read3:hover{
+    color: #a70c75;
+  }
   
   .story-side2 {
     grid-template-columns: repeat(2,1fr); /* Single-column layout */
@@ -807,27 +883,7 @@ display: none;
 
 
 
-.view {
-  font-size: 1.2rem; /* Font size for the button text */
-  font-weight: 600; /* Boldness of the text */
-  margin-bottom: 50px; /* Margin below the button */
-  color: #FFFFFF; /* White text color */
-  background-color: black; /* Black background color */
-  border: none; /* Removes border */
-  cursor: pointer; /* Changes cursor to pointer on hover */
-  border-radius: 16px; /* Smooth rounded corners */
-  padding: 10px 20px; /* Even padding for top/bottom and left/right */
-  position: absolute; /* Positioning for centering */
-  transform: translate(-50%, -50%); /* Adjusts position to truly center */
-  left: 50%; /* Centers horizontally */
-  top: 840%; /* Centers vertically */
-  text-align: center; /* Centers text inside the button */
-}
 
-view:hover {
-  background-color: #333; /* Slightly lighter black on hover */
-  transition: background-color 0.3s ease; /* Smooth transition effect */
-}
 .marquee{
   font-size: 1.5rem;
   font-weight: 600;
@@ -851,8 +907,8 @@ view:hover {
   
 }
 .footer-content1{
-  width: 300px !important;
-  margin-left: 70px !important;
+  width: 300px ;
+  margin-left: 70px ;
   height: auto;
 }
 
@@ -917,35 +973,30 @@ margin-top: 30px !important;
 @media (max-width: 576px) {
   .footer {
     grid-template-columns: 1fr; /* Single-column grid */
-    padding: 20px; /* Padding around the footer */
     height: 600px;
+    justify-content: flex-start;
+    margin-left: 0;
   }
 
-  .footer-content1, 
-  .footer-content3, 
-  .education, 
-  .contact-info {
-    margin-left: 20px; /* Consistent left margin */
-    text-align: left; /* Align content to the left */
+  
+  .footer-content2{
+    
+    margin-right: 350px;
   }
 
-  .education {
-    justify-content: start; /* Keep content aligned to the left */
-    margin-left: 20px; /* Ensure left margin matches other sections */
+
+
+  .footer-content3{
+  
+    margin-right: 320px;
   }
 
-  .education-title {
-    margin-top: 10px; /* Reduce spacing for smaller screens */
+  .contact-link{
+    
+    margin-left: 30px;
   }
-.school-list{
-  margin-left: 0;
+
+  
 }
-  .contact-link {
-    margin-left: 20px; /* Consistent left margin */
-    justify-content: start; /* Align icons to the left */
-  }
 
-  .school-list {
-    margin-left: 20px; /* Consistent left margin for school list */
-  }
-}
+
